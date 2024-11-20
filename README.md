@@ -11,6 +11,7 @@ npm install
 Other dependencies to download for the app to work:
 - axios
 - tailwind
+- primeicons (from primevue) `npm install primeicons`
 
 
 ### Compile and Hot-Reload for Development
