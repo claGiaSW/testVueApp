@@ -15,7 +15,7 @@ onMounted(async () => {
         const response = await axios.get(`/api/jobs/${jobId}`);
         job.value = response.data;
     } catch (error) {
-        console.error(`Error fetching jobs: ${error}`);
+        console.error(`Error fetching job: ${error}`);
     } finally {
         isLoading.value = false;
     }
@@ -33,7 +33,7 @@ onMounted(async () => {
                         <div class="text-gray-500 mb-4">{{ job.type }}</div>
                         <h1 class="text-3xl font-bold mb-4">{{ job.title }}</h1>
                         <div class="text-gray-500 mb-4 flex align-middle justify-center md:justify-start">
-                            <i class="fa-solid fa-location-dot text-lg text-orange-700 mr-2"></i>
+                            <i class="pi pi-map-marker text-lg text-orange-700 mr-2"></i>
                             <p class="text-orange-700">{{ job.location }}</p>
                         </div>
                     </div>
