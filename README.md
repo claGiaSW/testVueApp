@@ -13,6 +13,8 @@ Other dependencies to download for the app to work:
 - tailwind
 - primeicons (from primevue) `npm install primeicons`
 - vue-router
+- json-server
+- vue-spinner
 
 
 ### Compile and Hot-Reload for Development
