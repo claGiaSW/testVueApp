@@ -97,6 +97,20 @@
         "contactEmail": "ducks@fgmail.com",
         "contactPhone": "624542423432"
       }
+    },
+    {
+      "id": "0690",
+      "type": "Internship",
+      "title": "Internship",
+      "description": "rr",
+      "salary": "$70K - $80K",
+      "location": "rrr",
+      "company": {
+        "name": "rrrtrttr",
+        "description": "rt3rwewrw",
+        "contactEmail": "ducks@fgmail.com",
+        "contactPhone": "624542423432"
+      }
     }
   ]
 }

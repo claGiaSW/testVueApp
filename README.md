@@ -15,6 +15,7 @@ Other dependencies to download for the app to work:
 - vue-router
 - json-server
 - vue-spinner
+- vue-toastification@next
 
 
 ### Compile and Hot-Reload for Development
