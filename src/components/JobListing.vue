@@ -1,10 +1,29 @@
-<script setup>
+<script setup lang="ts">
     import { defineProps, ref, computed } from 'vue';
     import { RouterLink } from 'vue-router';
 
-    const props = defineProps({
-        job: Object
-    });
+    interface Company {
+        name: string,
+        description: string,
+        contactEmail: string,
+        contactPhone: string;
+    }
+
+    interface Job {
+      id: string,
+      title: string,
+      type: string,
+      description: string,
+      location: string,
+      salary: string,
+      company: Company;
+    }
+
+    interface Props {
+      job: Job;
+    }
+
+    const { job } = defineProps<Props>();
 
     const showFullDescription = ref(false);
 
@@ -13,7 +32,7 @@
     }
 
     const truncatedDescription = computed(() => {
-        let description = props.job.description;
+        let description = job.description;
         if (!showFullDescription.value) {
             description = `${description.substring(0, 90)}...`
         }

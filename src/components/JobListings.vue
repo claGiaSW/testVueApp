@@ -1,17 +1,16 @@
-<script setup>
+<script setup lang="ts">
 import axios from "axios";
 import JobListing from "./JobListing.vue";
 import { ref, defineProps, onMounted } from "vue";
 import PulseLoader from "vue-spinner/src/PulseLoader.vue";
 import { RouterLink } from "vue-router";
 
-defineProps({
-    limit: Number,
-    showButton: {
-        type: Boolean,
-        default: false
-    }
-});
+interface Props {
+    limit: number,
+    showButton: boolean;
+}
+
+const { limit, showButton = false } = defineProps<Props>();
 
 const jobs = ref([]);
 const isLoading = ref(true);
@@ -42,7 +41,6 @@ onMounted(async () => {
         </div>
     </section>
     <section v-if="showButton" class="m-auto max-w-lg my-10 px-6">
-        <RouterLink to="/jobs" class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700">View
-            All Jobs</RouterLink>
+        <RouterLink to="/jobs" class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700">View All Jobs</RouterLink>
     </section>
 </template>

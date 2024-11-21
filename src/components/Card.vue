@@ -1,12 +1,12 @@
-<script setup>
-    import { defineProps } from 'vue';
+<script setup lang="ts">
+import { defineProps } from 'vue';
 
-    defineProps({
-       background: {
-        type: String,
-        default: "bg-grey-100"
-       } 
-    })
+interface Props {
+    background: string;
+}
+
+const { background = "bg-grey-100" } = defineProps<Props>();
+
 </script>
 
 <template>

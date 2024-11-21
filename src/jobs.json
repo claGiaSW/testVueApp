@@ -83,20 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "1e23",
-      "type": "Remote",
-      "title": "REMOTE TEST",
-      "description": "TEST",
-      "salary": "Over $200K",
-      "location": "Rome",
-      "company": {
-        "name": "AAA",
-        "description": "softwire",
-        "contactEmail": "ducks@fgmail.com",
-        "contactPhone": "624542423432"
-      }
     }
   ]
 }
